@@ -1,5 +1,5 @@
 # BigQuery MCP Server for Data Analysts
-[![smithery badge](https://smithery.ai/badge/@ergut/mcp-bigquery-server)](https://smithery.ai/protocol/@ergut/mcp-bigquery-server)
+[![smithery badge](https://smithery.ai/badge/@jdmitra/mcp-bigquery-server)](https://smithery.ai/protocol/@jdmitra/mcp-bigquery-server)
 <div align="center">
   <img src="assets/mcp-bigquery-server-logo.png" alt="BigQuery MCP Server Logo" width="400"/>
 </div>
@@ -25,7 +25,7 @@ Here's all you need to do:
 2. Add your project details to Claude Desktop's config file
 3. Start chatting with your BigQuery data naturally!
 
-### What Can It Do? ��
+### What Can It Do? 📊
 
 - **Run SQL queries** by just asking questions in plain English
 - **Generate SQL** from natural language questions
@@ -45,10 +45,10 @@ Here's all you need to do:
 - Claude Desktop (currently the only supported LLM interface)
 
 ### Option 1: Quick Install via Smithery (Recommended)
-To install BigQuery MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/protocol/@ergut/mcp-bigquery-server), run this command in your terminal:
+To install BigQuery MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/protocol/@jdmitra/mcp-bigquery-server), run this command in your terminal:
 
 ```bash
-npx @smithery/cli install @ergut/mcp-bigquery-server --client claude
+npx @smithery/cli install @jdmitra/mcp-bigquery-server --client claude
 ```
 The installer will prompt you for:
 
@@ -82,7 +82,7 @@ If you prefer manual configuration or need more control:
            "command": "npx",
            "args": [
              "-y",
-             "@ergut/mcp-bigquery-server",
+             "@jdmitra/mcp-bigquery-server",
              "--project-id",
              "your-project-id",
              "--location",
@@ -101,7 +101,7 @@ If you prefer manual configuration or need more control:
            "command": "npx",
            "args": [
              "-y",
-             "@ergut/mcp-bigquery-server",
+             "@jdmitra/mcp-bigquery-server",
              "--project-id",
              "your-project-id",
              "--location",
@@ -163,7 +163,7 @@ The server accepts the following arguments:
 
 Example using service account:
 ```bash
-npx @ergut/mcp-bigquery-server --project-id your-project-id --location europe-west1 --key-file /path/to/key.json
+npx @jdmitra/mcp-bigquery-server --project-id your-project-id --location europe-west1 --key-file /path/to/key.json
 ```
 
 ### Permissions Needed
@@ -180,7 +180,7 @@ Want to customize or contribute? Here's how to set it up locally:
 
 ```bash
 # Clone and install
-git clone https://github.com/ergut/mcp-bigquery-server
+git clone https://github.com/jdmitra/mcp-bigquery-server
 cd mcp-bigquery-server
 npm install
 
@@ -217,9 +217,9 @@ Then update your Claude Desktop config to point to your local build:
 
 ## Support & Resources 💬
 
-- 🐛 [Report issues](https://github.com/ergut/mcp-bigquery-server/issues)
-- 💡 [Feature requests](https://github.com/ergut/mcp-bigquery-server/issues)
-- 📖 [Documentation](https://github.com/ergut/mcp-bigquery-server)
+- 🐛 [Report issues](https://github.com/jdmitra/mcp-bigquery-server/issues)
+- 💡 [Feature requests](https://github.com/jdmitra/mcp-bigquery-server/issues)
+- 📖 [Documentation](https://github.com/jdmitra/mcp-bigquery-server)
 
 ## License 📝
 
@@ -227,17 +227,8 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 ## Author ✍️ 
 
-Salih Ergüt
-
-## Sponsorship
-
-This project is proudly sponsored by:
-
-<div align="center">
-  <a href="https://www.oredata.com">
-    <img src="assets/oredata-logo-nobg.png" alt="OREDATA" width="300"/>
-  </a>
-</div>
+Johanna Mitra
+(Forked from original work by Salih Ergüt)
 
 ## Version History 📋
 

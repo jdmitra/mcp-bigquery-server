@@ -1,9 +1,9 @@
 {
-  "name": "@ergut/mcp-bigquery-server",
+  "name": "@jdmitra/mcp-bigquery-server",
   "version": "1.1.0",
   "description": "MCP server for interacting with BigQuery databases",
   "license": "MIT",
-  "homepage": "https://oredata.com",
+  "homepage": "https://github.com/jdmitra/mcp-bigquery-server",
   "type": "module",
   "bin": {
     "mcp-server-bigquery": "dist/index.js"
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ergut/mcp-bigquery-server"
+    "url": "https://github.com/jdmitra/mcp-bigquery-server"
   }
 }
