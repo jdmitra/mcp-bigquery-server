@@ -7,6 +7,12 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# Google Cloud service account keys
+bestreviews-200115-38ee35ffe54f.json
+*-38ee35ffe54f.json
+# General pattern for service account keys
+*-?????.json
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

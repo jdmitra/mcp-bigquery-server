@@ -70,8 +70,9 @@ async function validateConfig(config: ServerConfig): Promise<void> {
 function parseArgs(): ServerConfig {
   const args = process.argv.slice(2);
   const config: ServerConfig = {
-    projectId: '',
-    location: 'US' 
+    projectId: process.env.BIGQUERY_PROJECT_ID || 'bestreviews-200115',
+    location: process.env.BIGQUERY_LOCATION || 'US',
+    keyFilename: process.env.BIGQUERY_KEY_FILE || '/Users/johanna/mcp-bigquery-server/bestreviews-200115-38ee35ffe54f.json'
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -102,6 +103,8 @@ function parseArgs(): ServerConfig {
     }
   }
 
+  // We no longer need this check since we have default values
+  // But we keep it for validation if someone explicitly passed an empty value
   if (!config.projectId) {
     throw new Error(
       "Missing required argument: --project-id\n" +
